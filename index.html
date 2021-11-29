@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Metadata Tool إدارة البيانات الوصفية</title> <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<link rel="Identifier" href="http://www.dublincoregenerator.com" />
+<link rel="Comment" href="The Metadata tool is based on the GPL v2 Licensed code from dublincoregenerator.com" />
+<link rel="Comment" href="The Metadata tool was adapted by Clifford Sidney Cheney IV for the Thesaurus Islamicus Foundation" />
+<link rel="Rights" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" />
+
+<style type="text/css" style="display:none">
+    body{font-family:Arial,sans-serif;text-align:right;direction:rtl;}
+    .container{width:804px;margin:auto;padding:0;border:solid 0px;}
+    .header{width:600px;border:0px solid #6B90D4;font-size:24px;text-align:center;margin:0 auto;padding:5px;border:solid 0px;}
+    #centerpage{width:100%;padding:0;border:solid 0px;}
+    .leftpage{width:400px;float:left;padding:0;border:solid 0px;}
+    .rightpage{width:400px;float:right;padding:0;border:solid 0px;}
+    #loga{position:absolute;right: 20px;top:20px;border:solid 0px;}
+    #outputBox{position:relative;left:0px;top:0px;border:solid 0px;direction:ltr;}
+    .defaulttable{text-align:right;align:right;}
+    .buttonrow{text-align:left;}
+</style>
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"></link>
+
+<script type="text/javascript" src="js/generator.js"></script>
+<script type="text/javascript" src="js/addrow.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.anirows.js"></script>
+
+
+</head>
+	<body class="indexbody">
+	<div class="container">
+
+		<div class="header">
+                    <img src="" width="" height=""></img><br />
+			<span class="arabic">إدارة البيانات الوصفية</span>
+			<span class="english" style="display:none">Metadata Tool</span>
+		</div>
+
+<div id="centerpage">
+<div class="rightpage">
+
+                <table id="identifierTable" class="defaulttable" align="right">
+                        <tr>
+
+				<td>
+                                        <span class="arabic">معرف المصدر&nbsp;</span>
+                                        <span class="english" style="display:none">Identifier&nbsp;</span>
+                                </td>
+
+				<td class="buttonrow">
+										<a href="#identifier" class="addremovebutton" onclick="addRowToTable('identifier');" tabindex="-1">[+]</a>
+										<a href="#identifier" class="addremovebutton" onclick="removeRowFromTable('identifierTable');" tabindex="-1">[-]</a>
+				</td>
+                        </tr>
+			<tr>
+				<td colspan="2">
+					<input type="text" required name="identifierRow" id="identifierRow" size="55" class="idleField" style="direction:rtl;"/>
+				</td>
+			</tr>
+		</table>
+		<table id="dateTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">التاريخ&nbsp;</span>
+					<span class="english" style="display:none">Date&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+										<a href="#date" class="addremovebutton" onclick="addRowToTable('date');" tabindex="-1">[+]</a>
+										<a href="#date" class="addremovebutton" onclick="removeRowFromTable('dateTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+                                    <input type="text" name="dateRow" id="theDate" size="55" class="idleField"></input>
+					<!-- Date Formatting Script -->
+					<script type="text/javascript" src="js/date.js"></script>
+				</td>
+			</tr>
+		</table>
+
+	<table id="titleTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+				<span title="Title">
+					<span class="arabic">العنوان&nbsp;</span>
+					<span class="english" style="display:none">Title&nbsp;</span>
+					</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#title" class="addremovebutton" onclick="addRowToTable('title');" tabindex="-1">[+]</a>
+					<a href="#title" class="addremovebutton" onclick="removeRowFromTable('titleTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="titleRow" id="titleRow1" size="55" class="idleField" />
+				</td>
+			</tr>
+</table>
+	<table id="coverageTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="coveragerow">
+				<span title="Coverage">
+					<span class="arabic">تاريخ النسخة او التغطية&nbsp;</span>
+					<span class="english" style="display:none">Coverage&nbsp;</span>
+					</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#coverage" class="addremovebutton" onclick="addRowToTable('coverage');" tabindex="-1">[+]</a>
+					<a href="#coverage" class="addremovebutton" onclick="removeRowFromTable('coverageTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="coverageRow" id="coverageRow1" size="55" class="idleField" />
+				</td>
+			</tr>
+		</table>
+		<table id="descriptionTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">الوصف&nbsp;</span>
+					<span class="english" style="display:none">Description&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#description" class="addremovebutton" onclick="addRowToTable('description');" tabindex="-1">[+]</a>
+					<a href="#description" class="addremovebutton" onclick="removeRowFromTable('descriptionTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<textarea rows="4" cols="47" name="descriptionRow" id="descriptionRow1" class="idleField">
+</textarea>
+				</td>
+			</tr>
+		</table>
+		<table id="contributorTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">المشارك&nbsp;</span>
+					<span class="english" style="display:none">Contributor&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#contributor" class="addremovebutton" onclick="addRowToTable('contributor');" tabindex="-1">[+]</a>
+					<a href="#contributor" class="addremovebutton" onclick="removeRowFromTable('contributorTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="contributorRow" id="contributorRow1" class="idleField" size="55" />
+    				</td>
+			</tr>
+		</table>
+		<table id="typeTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">نوع&nbsp;</span>
+					<span class="english" style="display:none">Type&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#type" class="addremovebutton" onclick="addRowToTable('type');" tabindex="-1">[+]</a>
+					<a href="#type" class="addremovebutton" onclick="removeRowFromTable('typeTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="typeRow" id="typeRow1" size="55" class="idleField" value="image"/>
+				</td>
+			</tr>
+		</table>
+
+		<table id="formatTable" class="defaulttable" align="right">
+			<tr>
+				<td class="titlerow">
+				    <span class="arabic">الصيغة&nbsp;</span>
+				    <span class="english" style="display:none">Format&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+			       	    <a href="#format" class="addremovebutton" onclick="addRowToTable('format');" tabindex="-1">[+]</a>
+			    	    <a href="#format" class="addremovebutton" onclick="removeRowFromTable('formatTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+                                    <input type="text" name="formatRow" id="formatRow1" size="55" class="idleField" value="" list="formatList" />
+				</td>
+			</tr>
+                        <datalist id="formatList">
+                            <option value="A1">
+                            <option value="A2">
+                            <option value="A3">
+                            <option value="A4">
+                            <option value="A5">
+                        </datalist>
+		</table>
+		<table id="languageTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">اللغة&nbsp;</span>
+					<span class="english" style="display:none">Language&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#language" class="addremovebutton" onclick="addRowToTable('language');" tabindex="-1">[+]</a>
+					<a href="#language" class="addremovebutton" onclick="removeRowFromTable('languageTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="text" name="languageRow" id="languageRow1" size="55" class="idleField" list="langList" />
+				</td>
+			</tr>
+                        <datalist id="langList">
+                            <option value="ara">عربي</option>
+                            <option value="fas">فارسي</option>
+                            <option value="tur">تركي</option>
+                            <option value="eng">إنجليزي</option>
+                            <option value="deu">ألماني</option>
+                            <option value="ell">يوناني</option>
+                        </datalist>
+                        <!-- Using ISO 639-2 standard -->
+		</table>
+		<table id="sourceTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">المصدر&nbsp;</span>
+					<span class="english" style="display:none">Source&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#source" class="addremovebutton" onclick="addRowToTable('source');" tabindex="-1">[+]</a>
+					<a href="#source" class="addremovebutton" onclick="removeRowFromTable('sourceTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="sourceRow" id="sourceRow1" size="55" value="" class="idleField" />
+				</td>
+			</tr>
+		</table>
+		<table id="creatorTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">المنشئ&nbsp;</span>
+					<span class="english" style="display:none">Creator&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#creator" class="addremovebutton" onclick="addRowToTable('creator');" tabindex="-1">[+]</a>
+					<a href="#creator" class="addremovebutton" onclick="removeRowFromTable('creatorTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="creatorRow" id="creatorRow1" size="55" class="idleField" value="" required/>
+                                </td>
+                        </tr>
+		</table>
+		<table id="rightsTable" class="defaulttable" align="right">
+			<tr>
+
+				<td class="titlerow">
+					<span class="arabic">الحقوق&nbsp;</span>
+					<span class="english" style="display:none">Rights&nbsp;</span>
+				</td>
+				<td class="buttonrow">
+					<a href="#rights" class="addremovebutton" onclick="addRowToTable('rights');" tabindex="-1">[+]</a>
+					<a href="#rights" class="addremovebutton" onclick="removeRowFromTable('rightsTable');" tabindex="-1">[-]</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+<input type="text" name="rightsRow" id="rightsRow1" size="55" class="idleField" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+                                    <input type="text" name="rightsRow" id="rightsRow2" size="55" class="idleField" style="direction:ltr;" value="" />
+				</td>
+			</tr>
+		</table>
+</div>
+
+<div class="leftpage">
+<div id="outputBox">
+		<table class="defaulttable" align="right">
+			<tr>
+				<td class="titlerow">
+
+                                	<form action="" method="post" />
+                                        <select id="outputType" name="outputType" onchange="showHideOutput();">
+                                            <option value="text">text</option>
+                                            <option value="xml">xml</option>
+                                            <option value="html">html</option>
+                                            <option value="xhtml">xhtml</option>
+                                        </select>
+                                        <span style="display:none">
+                                        <input type="checkbox" id="adddeclaration" class="checkbox" checked>
+                                        <input type="checkbox" id="addroot" class="checkbox" checked>
+                                        <input type="text" value="metadata" id="rootname"></div>
+                                        <input type="checkbox" id="adddc" class="checkbox" checked>
+                                        </span>
+					<span class="arabic">المخرجات&nbsp;</span>
+					<span class="english" style="display:none">Output&nbsp;</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span onClick="CopyToClipboard()">
+						<script type="text/javascript">
+							function CopyToClipboard()
+								{
+									document.getElementById('textresults').focus();
+									document.getElementById('textresults').select();
+								}
+						</script>
+                                                    <textarea readonly rows="25" cols="60" id="textresults" class="textresults"></textarea>
+                                                    <textarea readonly rows="25" cols="60" id="xmlresults" class="xmlresults" style="display:none"></textarea>
+                                                    <textarea readonly rows="25" cols="60" id="htmlresults" class="htmlresults" style="display:none"></textarea>
+                                                    <textarea readonly rows="25" cols="60" id="xhtmlresults" class="xhtmlresults" style="display:none"></textarea>
+                                        <br/>
+					</span>
+
+					<span class="arabic">
+						<input type="button" value="إنشاء البيانات" onclick="generateCode();" class="button" id="generatebutton"/>&nbsp;
+						<input type="button" value="تفريغ البيانات" onclick="javascript:location.reload(true)" class="button" id="resetbutton" />
+                                                <br/><br/>
+						<a href="ArabicDublinCore.pdf" target="_new">صفحة دبلين كور بالعربي<img src="img/info_icon2.gif" width="15px" height="15px"></a>
+					</span>
+					<span class="english" style="display:none">
+						<input type="button" value="Generate Metadata!" onclick="generateCode();" class="button" id="generatebutton"/>&nbsp;
+						<input type="button" value="Reset Page" onclick="javascript:location.reload(true)" class="button" id="resetbutton" />
+                                                <br/><br/>
+                                                <a href="ArabicDublinCore.pdf" target="_new">Description of Dublin Core fields in Arabic <img src="img/info_icon2.gif" width="15px" height="15px"></a>
+					</span>
+
+                                        				</td>
+			</tr>
+
+		</table>
+
+</div>
+</div>
+
+<div id="loga">
+	<form action="" method="post" />
+	<span class="arabic">Language&nbsp;</span>
+	<span class="english" style="display:none">لفة&nbsp;</span>
+	<select id="outputLanguage" name="outputLanguage" onchange="showHideLanguage();">
+		<option value="arabic">عربي</option>
+                <option value="english">ِEnglish</option>
+	</select>
+</div>
+
+</div>
+</body>
+</html>
