@@ -1,7 +1,7 @@
 # MetadataTool
 إدارة البيانات الوصفية Metadata Tool
 
-This is a webpage tool to allow the formatting of <a href="https://dublincore.org">Dublin Core</a> image metadata using an Arabic user interface.
+This is a webpage tool to allow the formatting of <a href="https://dublincore.org">Dublin Core</a> image metadata using an Arabic language user interface.
 
 ![alt screenshot of metadatatool](https://github.com/Qirab/MetadataTool/blob/main/img/screenshot.png?raw=true)
 
