@@ -9,4 +9,4 @@ This project is a simplified adaptation of the <a href="https://github.com/nstef
 
 To use the MetadataTool, download the entire source folder and open the <code>index.html</code> in your web browser. It works locally or when uploaded to a webserver.
 
-It is released under the same <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.
+It is released under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.
