@@ -13,5 +13,5 @@ To use the MetadataTool, download the entire source folder and open the <code>in
 يمثل المشروع نسخة معدلة مبسطة لـ Dublin Core Generator</a><a href="https://github.com/nsteffel/dublin-core-generator">  بواسطة nsteffal</a><a href="https://github.com/nsteffel">
 This project is a simplified adaptation of the <a href="https://github.com/nsteffel/dublin-core-generator">Dublin Core Generator</a> by <a href="https://github.com/nsteffel">nsteffal</a>
 
-أصدرت بموجب GNU General Public License (v2)</a><a href="https://www.gnu.org/licenses/gpl-2.0.txt">
+أصدرت بموجب “>GNU General Public License (v2)</a><a href="https://www.gnu.org/licenses/gpl-2.0.txt
 It is released under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.
